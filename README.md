@@ -1,2 +1,64 @@
-# nihongo-hub
-A client-side Japanese learning hub featuring Kana audio matrices, JLPT flashcards with localStorage mastery tracking, 4-choice quiz, counters, survival phrases, and Keigo tables.
+# 🌸 Nihongo Hub - 日本語マスターハブ
+
+英語を第一言語とする外国人学習者や日本語学習初心者に向けた、クライアントサイド完結型のオールインワン日本語学習Webアプリケーションです。  
+外部サーバー通信を一切行わず、ブラウザ標準の音声合成（Web Speech API）と端末内保存（localStorage）により、安全・快適に日本語の基礎からJLPT語彙、実生活フレーズまでを体系的に学べます。
+
+> **🌐 Live Demo:**  
+> ブラウザで今すぐ使える本番版はこちら 👉 **[https://selfup.net/nihongo/](https://selfup.net/nihongo/)**
+
+---
+
+## 🌟 主な機能 (Features)
+
+### 1. 五十音タップ盤 ＆ 似た文字クイズ (Kana Matrix & Tricky Pairs)
+- **五十音オーディオ盤:** ひらがな・カタカナの清音・濁音・半濁音・拗音を完全網羅。タップでネイティブ発音（Web Speech API: `ja-JP`）を再生
+- **似た文字2択トレーナー:** 外国人が最も見分けづらい「シ / ツ」「ソ / ン」「さ / き」などの判別テスト
+
+### 2. JLPT 必須語彙フラッシュカード ＆ 4択テスト (Vocab Hub)
+- **3Dフリップカード:** 漢字表記・ふりがな・品詞・英語の語義を3Dアニメーションでめくって確認
+- **習得進捗トラッカー (localStorage):** 「Review / まだ」「Learned / 覚えた」をワンタップで仕分け。習得率（%）を可視化し、「未習得のみ」の絞り込み復習に対応
+- **単語一覧・リアルタイム検索:** 漢字・読み・英語の意味によるインクリメンタル検索に対応
+- **実戦4択テスト:** 収録単語からランダムに10問出題。正解した単語は自動的に「習得済み」へ反映
+
+### 3. 助数詞（数え方）マスター (Numeral Counters)
+- **TOP10助数詞網羅:** 本、枚、個、杯、匹、冊、台、人、つ、回
+- **音変化ハイライト:** 外国人がつまずきやすい「1本＝いっぽん」「3本＝さんぼん」「6本＝ろっぽん」などの不規則な音変化をわかりやすく色分け表示
+
+### 4. トラベル・サバイバル即席カンペ (Survival Phrases)
+- **5大シチュエーション:** コンビニ、飲食店・居酒屋、駅・電車、ホテル、緊急時
+- **特大カード提示モード:** 「袋は要りません」「お会計をお願いします」などを店員に見せるだけで通じる大画面モーダル表示＆相手に聞かせるワンタップ音声
+
+### 5. 敬語・丁寧語・カジュアル変換 (Keigo Conversions)
+- **4段階マトリクス:** 基本形（辞書形）⇄ 丁寧語（です・ます）⇄ 尊敬語（相手を高める）⇄ 謙譲語（へりくだる）の動詞対照表
+
+---
+
+## 🛠 開発について (About)
+
+このプロジェクトは、**生成AI（Gemini）を活用したバイブコーディング（対話型プログラミング）**によって制作されたシングルファイルWebアプリケーションです。
+
+- **企画・仕様設計・ディレクション:** teratere
+- **コード実装・AIアシスタント:** Gemini
+- **構成技術:** HTML5 / Tailwind CSS (CDN) / Vanilla JavaScript / Web Speech API (ja-JP) / localStorage
+
+---
+
+## 📄 データ引用・ライセンス (Attribution & License)
+
+本アプリケーションの辞書データおよび音声再生には、以下のオープンデータ・Web標準技術を使用しています。
+
+1. **JMdict / EDICT (日本語辞書・語彙データ)**
+   - 著者・提供: Electronic Dictionary R&D Group (EDRDG) / Jim Breen
+   - ライセンス: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+2. **Web Speech API (ja-JP)**
+   - W3C Web Speech API Specification 準拠のブラウザ標準音声エンジンを使用（外部有償音声通信なし）
+
+### ソースコードライセンス
+[MIT License](LICENSE)
+
+---
+
+## 🔗 関連リンク (Related Links)
+
+- 🏠 **Apps Hub (ポータル):** [https://selfup.net/](https://selfup.net/)
+- 📱 **Web App:** [https://selfup.net/nihongo/](https://selfup.net/nihongo/))
